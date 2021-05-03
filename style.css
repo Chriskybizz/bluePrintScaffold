@@ -92,6 +92,12 @@ body {
     border-radius: 20px;
 }
 .infoInfo{
+    margin: auto;
     background: transparent;
 
+}
+
+#logo{
+height: 100px;
+margin: auto;
 }
