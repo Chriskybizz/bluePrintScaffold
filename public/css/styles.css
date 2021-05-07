@@ -5,8 +5,7 @@
   --black: rgba(0, 0, 0, 1);
   --off-black: rgba(24, 24, 24, 1);
   --light-grey: rgba(235, 235, 235, 1);
-  --white: rgba(255, 255, 255, 1);
-}
+  --white: rgba(255, 255, 255, 1); }
 
 /* 	==================================================================================================================
 	blueprint scaffolding // global
@@ -15,43 +14,32 @@
   margin: 0;
   padding: 0;
   outline: 0;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 html {
   position: relative;
   -webkit-font-smoothing: antialiased;
-  font-size: 62.5%;
-}
+  font-size: 62.5%; }
 
 body {
   font-size: 1.8rem;
   font-family: "Raleway", sans-serif;
   width: 100%;
-  overflow-x: hidden;
-}
-body > div.main > div, body > div.nav, body > div.footer > div {
-  padding: 0 4.8rem;
-}
-@media (max-width: 1280px) {
-  body > div.main > div, body > div.nav, body > div.footer > div {
-    padding: 0 10.8rem;
-  }
-}
-@media (max-width: 600px) {
-  body > div.main > div, body > div.nav, body > div.footer > div {
-    padding: 0 5.6rem;
-  }
-}
-
+  overflow-x: hidden; }
+  body > div.main > div, body > div.nav, body > div static-footer > div {
+    padding: 0 4.8rem; }
+    @media (max-width: 1280px) {
+      body > div.main > div, body > div.nav, body > div static-footer > div {
+        padding: 0 10.8rem; } }
+    @media (max-width: 600px) {
+      body > div.main > div, body > div.nav, body > div static-footer > div {
+        padding: 0 5.6rem; } }
 .row,
 .column {
-  display: flex;
-}
+  display: flex; }
 
 .column {
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 /* 	==================================================================================================================
 	blueprint scaffolding // fonts
@@ -60,29 +48,25 @@ h1 {
   font-size: 8.8rem;
   font-weight: 300;
   line-height: 10.56rem;
-  font-family: "Poppins", sans-serif;
-}
+  font-family: "Poppins", sans-serif; }
 
 h2 {
   font-size: 2.8rem;
   font-weight: 400;
   line-height: 3.5rem;
-  font-family: "Poppins", sans-serif;
-}
+  font-family: "Poppins", sans-serif; }
 
 h4 {
   font-size: 2.6rem;
   font-weight: 400;
   line-height: 4.342rem;
-  font-family: "Poppins", sans-serif;
-}
+  font-family: "Poppins", sans-serif; }
 
 /* 	==================================================================================================================
 	blueprint scaffolding // fonts // colours
 	================================================================================================================== */
 .white {
-  color: var(--white);
-}
+  color: var(--white); }
 
 /* 	==================================================================================================================
 	blueprint scaffolding // nav
@@ -97,24 +81,19 @@ div.nav {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
-}
-div.nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-}
-div.nav ul li {
-  margin-right: 1.6rem;
-}
-div.nav ul li a {
-  text-decoration: none;
-  color: var(--off-black);
-  font-size: 1.8rem;
-}
-div.nav ul li a.active {
-  text-decoration: underline;
-}
+  z-index: 2; }
+  div.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; }
+    div.nav ul li {
+      margin-right: 1.6rem; }
+      div.nav ul li a {
+        text-decoration: none;
+        color: var(--off-black);
+        font-size: 1.8rem; }
+        div.nav ul li a.active {
+          text-decoration: underline; }
 
 /* 	==================================================================================================================
 	blueprint scaffolding // slider
@@ -124,20 +103,17 @@ body div.main div.slider {
   position: relative;
   width: 100%;
   height: auto;
-  max-height: 80rem;
-}
-body div.main div.slider img {
-  width: 100%;
-  height: auto;
-  max-height: 80rem;
-}
-body div.main div.slider div.text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
+  max-height: 80rem; }
+  body div.main div.slider img {
+    width: 100%;
+    height: auto;
+    max-height: 80rem; }
+  body div.main div.slider div.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
 
 /* 	==================================================================================================================
 	blueprint scaffolding // text-block
@@ -148,8 +124,7 @@ body div.main div.text-block {
   padding-bottom: 4rem;
   min-height: 30rem;
   justify-content: space-evenly;
-  align-items: center;
-}
+  align-items: center; }
 
 /* 	==================================================================================================================
 	blueprint scaffolding // full-image
@@ -159,40 +134,34 @@ body div.main div.full-image {
   position: relative;
   width: 100%;
   height: auto;
-  max-height: 56rem;
-}
-body div.main div.full-image h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-body div.main div.full-image img {
-  width: 100%;
-  height: auto;
-  max-height: 56rem;
-}
+  max-height: 56rem; }
+  body div.main div.full-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  body div.main div.full-image img {
+    width: 100%;
+    height: auto;
+    max-height: 56rem; }
 
 /* 	==================================================================================================================
 	blueprint scaffolding // footer
 	================================================================================================================== */
-body div.footer div.contact {
-  display: flex;
-  min-height: 30rem;
-  justify-content: space-evenly;
-  align-items: center;
-}
-body div.footer div.contact a {
-  color: var(--off-black);
-}
-body div.footer div.row {
-  background-color: var(--light-grey);
-  height: 6rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/*# sourceMappingURL=styles.css.map */
+body static-footer div.footer {
+  background-color: blue; }
+  body static-footer div.footer div.contact {
+    display: flex;
+    min-height: 30rem;
+    justify-content: space-evenly;
+    align-items: center; }
+    body static-footer div.footer div.contact a {
+      color: var(--off-black); }
+  body static-footer div.footer div.row {
+    background-color: var(--light-grey);
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
