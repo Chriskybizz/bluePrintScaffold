@@ -52,21 +52,33 @@ class StaticFooter extends HTMLElement {
     constructor() {
         // Always call super first in constructor
         super();
-        const linkElem = document.createElement('link');
-        linkElem.setAttribute('rel', 'stylesheet');
-        linkElem.setAttribute('href', 'public/css/static-footer/static-footer.css');
-
+    }
+    connectedCallback() {
         const footer = document.createElement('div');
         footer.setAttribute('class', 'footer');
         footer.append(getFooterLeft());
         footer.append(getFooterRight());
 
-        // Create a shadow root
-        const shadowRoot = this.attachShadow({mode: 'open'}); // sets and returns 'this.shadowRoot'
-        shadowRoot.append(linkElem);
-        shadowRoot.append(footer)
+        this.appendChild(footer)
 
     }
 }
 
-customElements.define('static-footer', StaticFooter);
+class Feature extends HTMLElement {
+    constructor() {
+        // Always call super first in constructor
+        super();
+    }
+    connectedCallback() {
+        const footer = document.createElement('div');
+        footer.setAttribute('class', 'footer');
+        footer.append(getFooterLeft());
+        footer.append(getFooterRight());
+
+        this.appendChild(footer)
+
+    }
+}
+
+customElements.define('app-static-footer', StaticFooter);
+customElements.define('app-feature', Feature);

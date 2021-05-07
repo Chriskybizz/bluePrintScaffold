@@ -149,16 +149,18 @@ body div.main div.full-image {
 /* 	==================================================================================================================
 	blueprint scaffolding // footer
 	================================================================================================================== */
-body static-footer div.footer {
-  background-color: blue; }
-  body static-footer div.footer div.contact {
+body app-static-footer div.footer {
+  display: flex;
+  flex-direction: column; }
+  body app-static-footer div.footer div.contact {
     display: flex;
+    flex-direction: column;
     min-height: 30rem;
     justify-content: space-evenly;
     align-items: center; }
-    body static-footer div.footer div.contact a {
+    body app-static-footer div.footer div.contact a {
       color: var(--off-black); }
-  body static-footer div.footer div.row {
+  body app-static-footer div.footer div.row {
     background-color: var(--light-grey);
     height: 6rem;
     display: flex;

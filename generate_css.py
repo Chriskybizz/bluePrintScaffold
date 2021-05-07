@@ -2,7 +2,8 @@ import sass
 
 sass_map = {
     "source/css/styles.scss": "public/css/styles.css",
-    "source/css/static-footer/static-footer.scss": "public/css/static-footer/static-footer.css"}
+    #"source/css/static-footer/static-footer.scss": "public/css/static-footer/static-footer.css"
+}
 
 def compile_sass_to_css(sass_map):
 
